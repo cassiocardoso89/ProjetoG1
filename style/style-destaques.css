@@ -1,0 +1,63 @@
+.destaques {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "destaque1 destaque2"
+        "destaque1 destaque3"
+        "outrasNoticias outrasNoticias";
+    grid-area: destaques;
+}
+
+.destaque1 {
+    grid-area: destaque1;
+}
+
+.destaque2 {
+    grid-area: destaque2;
+}
+
+.destaque3 {
+    grid-area: destaque3;
+}
+
+.outrasNoticias {
+    background-color: rgb(31, 121, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "outraNoticia1Foto outraNoticia1Texto"
+        "outraNoticia2Foto outraNoticia2Texto"
+        "outraNoticia3Foto outraNoticia3Texto";
+    grid-area: outrasNoticias;
+}
+
+.outraNoticia1Foto {
+    grid-area: outraNoticia1Foto;
+}
+
+.outraNoticia2Foto {
+    grid-area: outraNoticia2Foto;
+}
+
+.outraNoticia3Foto {
+    grid-area: outraNoticia3Foto;
+}
+
+.outraNoticia1Texto {
+    grid-area: outraNoticia1Texto;
+}
+
+.outraNoticia2Texto {
+    grid-area: outraNoticia2Texto;
+}
+
+.outraNoticia3Texto {
+    grid-area: outraNoticia3Texto;
+}

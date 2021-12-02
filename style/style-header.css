@@ -1,0 +1,26 @@
+.HEADER {
+    background-color: rosybrown;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "MENU logo search";
+    grid-area: HEADER;
+}
+
+.MENU {
+    border: #000000 solid 1px;
+    grid-area: MENU;
+}
+
+.logo {
+    border: #ff0000 solid 1px;
+    grid-area: logo;
+}
+
+.search {
+    border: #1100ff solid 1px;
+    grid-area: search;
+}
