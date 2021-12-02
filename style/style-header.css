@@ -1,26 +1,46 @@
-.HEADER {
-    background-color: rosybrown;
+.header {
+    padding: 15px 0;
+    background-color: #C4170C;
+    color: #FFFFFF;
+    font-weight: 600 ;
+    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 0px 0px;
+    /* gap: 0px 0px; */
     grid-auto-flow: row;
     grid-template-areas:
-        "MENU logo search";
-    grid-area: HEADER;
+        "menu logo search";
+    grid-area: header;
 }
 
-.MENU {
-    border: #000000 solid 1px;
-    grid-area: MENU;
+.menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: center;
 }
+.botaoMenu{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 
 .logo {
-    border: #ff0000 solid 1px;
     grid-area: logo;
 }
 
 .search {
-    border: #1100ff solid 1px;
     grid-area: search;
+}
+
+.search input {
+    border: #707070 solid 1px;
+    background: url("../img/search.svg") no-repeat left center / contain;
+    background-color: #8B0000;
+    padding-left: 5%;
+    color: #FFFFFF;
+    border-radius: 8px;
+    width: 30%;
+    height: 30px;
 }
