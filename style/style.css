@@ -4,11 +4,10 @@ body {
 }
 
 .container {
-    vertical-align: middle;
+    /* vertical-align: middle; */
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.4fr 2.7fr 0.4fr 0.5fr;
-    gap: 1px 1px;
+    grid-template-rows: auto auto 2.7fr 0.4fr auto;
     grid-auto-flow: row;
     grid-template-areas:
         "header"
