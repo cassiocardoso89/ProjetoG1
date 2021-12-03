@@ -1,24 +1,40 @@
 .footer {
-    background-color: brown;
+    background-color: #C4170C;
+    color: #fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1.3fr 0.7fr;
-    gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "logoFooter ."
-        "copyright menuViajado";
+        "copyright menuFooter";
     grid-area: footer;
+    padding: 20px 0 0 50px;
+    text-align: left;
+    margin: 0;
 }
 
 .logoFooter {
     grid-area: logoFooter;
 }
+.logoFooter span{
+    padding-left: 30px;
+}
 
 .copyright {
     grid-area: copyright;
+    margin: 0;
 }
 
-.menuViajado {
-    grid-area: menuViajado;
+.menuFooter {
+    text-align: end;
+    grid-area: menuFooter;
+}
+.menuFooter ul li{
+    display: inline-block;
+}
+.menuFooter ul li a, a:hover, a:active, a:visited {
+    padding: 0px 20px;
+    color: #fff;
+    text-decoration: none;
 }
