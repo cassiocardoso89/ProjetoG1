@@ -1,27 +1,40 @@
 .destaques {
-    background-color: aqua;
+    /* background-color: aqua; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
     grid-auto-flow: row;
+    grid-gap: 100px;
     grid-template-areas:
         "destaque1 destaque2"
         "destaque1 destaque3"
         "outrasNoticias outrasNoticias";
     grid-area: destaques;
+    margin: 0 100px;
+    text-align: left;
+    align-items: center;
 }
 
 .destaque1 {
     grid-area: destaque1;
+    height: 100%;
+    color: #8B0000;
+    border: #707070 solid 2px;
+    padding: 0 20px;
+}
+
+.destaque1 h2{
+    font-weight: 600;
 }
 
 .destaque2 {
     grid-area: destaque2;
+    font-weight: 600;
 }
 
 .destaque3 {
     grid-area: destaque3;
+    font-weight: 600;
 }
 
 .outrasNoticias {
