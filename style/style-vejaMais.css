@@ -2,3 +2,12 @@
     background-color: blueviolet;
     grid-area: vejaMais;
 }
+
+.vejaMais button {
+    width: 389px;
+    height: 89px;
+    background: #C4170C;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
