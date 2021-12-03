@@ -1,5 +1,4 @@
 .outrasNoticias {
-    background-color: rgb(31, 121, 255);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
