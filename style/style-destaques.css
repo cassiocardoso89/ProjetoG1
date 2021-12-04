@@ -1,15 +1,15 @@
 .destaques {
     /* background-color: aqua; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     grid-auto-flow: row;
     gap: 50px;
     grid-template-areas:
         "destaque1 destaque2"
         "destaque1 destaque3";
     grid-area: destaques;
-    margin: 0 100px;
+    padding: 0 10%;
     text-align: left;
     align-items: center;
 }
@@ -19,12 +19,11 @@
     height: 100%;
     color: #8B0000;
     border: #707070 solid 2px;
-    padding: 0 20px;
+    /* background-color: #707070; */
+    padding: 0 0 0 20px;
     display: grid;
-    align-items: center
+    align-items: center;
 }
-
-
 .destaque1 h2{
     font-weight: 600;
 }
@@ -32,9 +31,44 @@
 .destaque2 {
     grid-area: destaque2;
     font-weight: 600;
+    padding: 0 20px;
+    display: grid;
+    align-items: center;
+    width: 100%;
+}
+.destaque2 img{
+    width: 100%;
 }
 
 .destaque3 {
     grid-area: destaque3;
     font-weight: 600;
+    padding: 0 20px;
+    display: grid;
+    align-items: center;
+    width: 100%;
 }
+
+.destaque3 img{
+    width: 100%;
+}
+
+/* 
+@media screen and (max-width: 1000px) {
+    .destaques {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "destaque1"
+            "destaque2"
+            "destaque3";
+        padding: 1%;
+    }
+
+    .destaque1 {
+        grid-area: destaque1;
+        width: 80%;
+    }
+
+    
+} */
