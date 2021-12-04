@@ -1,5 +1,5 @@
 .header {
-    padding: 15px 100px;
+    padding: 15px 10%;
     background-color: #C4170C;
     color: #FFFFFF;
     font-weight: 600 ;
@@ -17,7 +17,8 @@
     display: flex;
     justify-content: left;
     border: #FFFFFF solid 1px;
-    max-width: 1fr;
+    width: 100%;
+
 }
 
 .botaoMenu{
@@ -29,6 +30,8 @@
 .logo {
     grid-area: logo;
     border: #00ff2a solid 1px;
+    width: 100%;
+
     }
 
 .logo img{height: 50px;}
@@ -38,6 +41,8 @@
     display: flex;
     justify-content: right;
     border: #00b7ff solid 1px;
+    width: 100%;
+
 }
 
 .search input{
@@ -52,5 +57,5 @@
     color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 10px;
-    width: 250px;
+    width: 100px;
     height: 15px;}
