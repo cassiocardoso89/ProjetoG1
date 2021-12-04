@@ -1,14 +1,12 @@
 .header {
-    padding: 15px 0;
+    padding: 15px 100px;
     background-color: #C4170C;
     color: #FFFFFF;
     font-weight: 600 ;
     align-items: center;
     display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 1fr;
-    /* gap: 0px 0px; */
-    /* grid-auto-flow: row; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     grid-template-areas:
         "menu logo search";
     grid-area: header;
@@ -17,21 +15,29 @@
 .menu {
     grid-area: menu;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    border: #FFFFFF solid 1px;
+    max-width: 1fr;
 }
+
 .botaoMenu{
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-
 .logo {
     grid-area: logo;
-}
+    border: #00ff2a solid 1px;
+    }
+
+.logo img{height: 50px;}
 
 .search {
     grid-area: search;
+    display: flex;
+    justify-content: right;
+    border: #00b7ff solid 1px;
 }
 
 .search input{
@@ -46,6 +52,5 @@
     color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 10px;
-    width: 30%;
-    height: 30px;
-}
+    width: 250px;
+    height: 15px;}
