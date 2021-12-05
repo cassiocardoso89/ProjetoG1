@@ -2,7 +2,7 @@
     padding: 15px 10%;
     background-color: #C4170C;
     color: #FFFFFF;
-    font-weight: 600 ;
+    font-weight: 600;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,12 +16,9 @@
     grid-area: menu;
     display: flex;
     justify-content: left;
-    border: #FFFFFF solid 1px;
-    width: 100%;
-
 }
 
-.botaoMenu{
+.botaoMenu {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -29,23 +26,19 @@
 
 .logo {
     grid-area: logo;
-    border: #00ff2a solid 1px;
-    width: 100%;
+}
 
-    }
-
-.logo img{height: 50px;}
+.logo img {
+    height: 50px;
+}
 
 .search {
     grid-area: search;
     display: flex;
     justify-content: right;
-    border: #00b7ff solid 1px;
-    width: 100%;
-
 }
 
-.search input{
+.search input {
     border: #8B0000 solid 10px;
     outline-color: rgb(160, 160, 160);
     outline-offset: 1px;
@@ -57,5 +50,5 @@
     color: #FFFFFF;
     text-transform: uppercase;
     border-radius: 10px;
-    width: 100px;
-    height: 15px;}
+    height: 15px;
+}
