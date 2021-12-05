@@ -2,8 +2,6 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    /* row-gap: 80px; */
-    
     grid-auto-flow: row;
     grid-template-areas:
         "outraNoticia1"
@@ -12,8 +10,6 @@
     grid-area: outrasNoticias;
     padding: 50px 10%;
     text-align: left;
-    /* align-items: center; */
-    /* border: #ff0000 solid 4px; */
 }
 
 
@@ -68,4 +64,14 @@
 .dadosNoticia{
     font: normal normal normal 22px/31px 'Segoe UI';
     color: #746565;
+}
+
+@media screen and (max-width: 720px) {
+    .outraNoticia1, .outraNoticia2, .outraNoticia3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 0;
+        padding: 0;
+    }
+    
 }
