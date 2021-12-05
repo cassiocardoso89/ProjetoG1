@@ -52,20 +52,20 @@
 }
 
 .categoriaNoticia{
-    font: normal normal 600 25px/33px Segoe UI;
+    font: normal normal 600 20px/28px 'Segoe UI';
     margin: 0;
 }
 .tituloNoticia{
-    font: normal normal 600 35px/47px Segoe UI;
+    font: normal normal 600 30px/42px 'Segoe UI';
     color: #C4170C;
     margin: 0;
 }
 
 .previaNoticia{
-    font: normal normal normal 27px/36px Segoe UI;
+    font: normal normal normal 22px/31px 'Segoe UI';
 }
 
 .dadosNoticia{
-    font: normal normal normal 27px/36px Segoe UI;
+    font: normal normal normal 22px/31px 'Segoe UI';
     color: #746565;
 }

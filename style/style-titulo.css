@@ -1,3 +1,5 @@
 .titulo {
     grid-area: titulo;
+    font: normal normal 600 18px/20px 'Segoe UI';
+    padding: 40px 0;
 }
