@@ -11,4 +11,13 @@
     border-radius: 4px;
     color: #FFFFFF;
     font: normal normal 600 20px/28px 'Segoe UI';
+    cursor: pointer;
+}
+
+.vejaMais button:hover {
+    background: #FFFFFF;
+    color: #C4170C;
+    border: #C4170C 2px solid;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
 }
