@@ -37,9 +37,50 @@
 }
 .menuServico ul li{
     display: inline-block;
+    border-right: #fff solid 2px;
 }
 .menuServico ul li a, a:hover, a:active, a:visited {
     padding: 0 5px;
     color: #fff;
     text-decoration: none;
+}
+.menuServico ul li:last-child{
+    border-right: none;
+}
+.menuServico ul li a:hover{
+    background-color: #fff;
+    border-radius: 10px;
+    color: #C4170C;
+    transition: all 0.3s;
+}
+
+
+@media screen and (max-width: 720px) {
+    .footer {
+        padding: 15px 5% 0 5%;
+        grid-template-areas:
+        "logoFooter menuServico"
+        "copyright menuServico";
+    }
+
+    .logoFooter img {
+        width: 35px;
+    }
+
+    .logoFooter span{
+        padding-left: 30px;
+        font: normal normal 600 15px/25px 'Segoe UI';
+    }
+
+    .menuServico ul li{
+        display: block;
+    }
+    .menuServico ul li:last-child{
+        border-right: #fff solid 2px;
+    }
+    .copyright {
+        grid-area: copyright;
+        margin: 0;
+        font: normal normal normal 15px 'Segoe UI';
+    }
 }
