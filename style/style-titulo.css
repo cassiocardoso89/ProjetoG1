@@ -1,5 +1,12 @@
 .titulo {
     grid-area: titulo;
-    font: normal normal 600 18px/20px 'Segoe UI';
+    font: normal normal 600 1em 'Segoe UI';
     padding: 40px 0;
+}
+
+@media screen and (max-width: 720px) {
+    .titulo {
+        font-size: 0.8em;
+        padding: 0;
+    }
 }
