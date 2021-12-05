@@ -46,7 +46,6 @@
 .outraNoticiaFoto img {
     width: 100%;
 }
-
 .categoriaNoticia{
     font: normal normal 600 20px/28px 'Segoe UI';
     margin: 0;
@@ -56,21 +55,23 @@
     color: #C4170C;
     margin: 0;
 }
-
 .previaNoticia{
     font: normal normal normal 22px/31px 'Segoe UI';
 }
-
 .dadosNoticia{
     font: normal normal normal 22px/31px 'Segoe UI';
     color: #746565;
 }
 
 @media screen and (max-width: 720px) {
+    .outrasNoticias{
+        padding: 0 10%;
+    }
     .outraNoticia1, .outraNoticia2, .outraNoticia3 {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 0;
+        grid-template-rows: 1fr;
+    }
+    .previaNoticia{
         padding: 0;
     }
     
