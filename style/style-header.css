@@ -12,30 +12,27 @@
     grid-area: header;
 }
 
+.botaoMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .menu {
     grid-area: menu;
     display: flex;
     justify-content: left;
 }
 
-.botaoMenu {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
 .logo {
     grid-area: logo;
 }
-
 .logo img {
     height: 50px;
 }
 
 .search {
     grid-area: search;
-    display: flex;
-    justify-content: right;
+    text-align: right;
 }
 
 .search input {
@@ -51,4 +48,12 @@
     text-transform: uppercase;
     border-radius: 10px;
     height: 15px;
+}
+
+.search input::placeholder{
+    color: #ffffff;
+}
+
+.search input:focus::placeholder {
+    color: #8B0000;
 }
