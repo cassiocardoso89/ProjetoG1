@@ -17,7 +17,6 @@
     align-items: center;
     cursor: pointer;
 }
-
 .menu {
     grid-area: menu;
     display: flex;
@@ -31,7 +30,6 @@
 .logo {
     grid-area: logo;
 }
-
 .logo img {
     height: 50px;
 }
@@ -40,7 +38,6 @@
     grid-area: search;
     text-align: right;
 }
-
 .defaultSearch {
     border: #8B0000 solid 10px;
     outline-color: rgb(160, 160, 160);
@@ -55,11 +52,15 @@
     border-radius: 10px;
     height: 15px;
 }
-
 .defaultSearch::placeholder {
     color: #ffffff;
 }
-
+.defaultSearch:focus {
+    width: 400px;
+    padding: 0;
+    background: #8B0000;
+    transition: width 0.9s ease-out;
+}
 .defaultSearch:focus::placeholder {
     color: #8B0000;
 }
@@ -75,7 +76,6 @@
     .botaoMenu img{
         width: 35px;
     }
-    
     .botaoMenu span{
         display: none;
     }
@@ -109,6 +109,6 @@
     .microSearch:focus {
         width: 110px;
         background: #8B0000;
+        transition: width 0.3s ease-in-out;
     }
-
 }
