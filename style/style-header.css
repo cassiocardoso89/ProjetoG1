@@ -23,6 +23,10 @@
     display: flex;
     justify-content: left;
 }
+.botaoMenu:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
 
 .logo {
     grid-area: logo;
